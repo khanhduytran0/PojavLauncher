@@ -28,8 +28,10 @@
 		}
 	
     </style>
-    
+    <!--
     <script>
+    alert("This version is outdated and no longer maintained. Please update to v3 to get latest features and security updates.");
+
     function reqListener () {
       document.getElementById("frame").innerHTML = this.responseText;
     }
@@ -39,14 +41,16 @@
     oReq.open("GET", "https://github.com/PojavLauncherTeam/PojavLauncher/releases/tag/v3.3.0-testing");
     oReq.send();
     </script>
+-->
   </head>
   <body>
 <!--
 	<h3 style="padding-left: 20px;">PojavLauncher</h3>
 -->
 	<div class="changelogzzz">
-	  <h2>Still using PojavLauncher v2? This version is outdated! Read below!</h2>
-      The current version is v3.3, changelog:<br>
+	  <h2>Still using PojavLauncher v2? This version is outdated! <a href="https://github.com/PojavLauncherTeam/PojavLauncher/releases/tag/v3.3.0-testing">Update to v3.3</a> right now to get features as below:</h2>
+      - Minecraft 1.12+ up to latest 1.17 snapshot are supported! <br>
+      - Forge (1.12.2 and below) and Fabric are supported. <br> 
 	</div>
 	
 	<div id="frame" width="100%" height="100%" background="white"></div>
