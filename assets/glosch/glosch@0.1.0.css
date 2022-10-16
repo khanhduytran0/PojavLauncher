@@ -17,7 +17,7 @@
 /* Fonts 
   * This file comes with a preconfigured @font-face with the following fonts: Gotham Bold, Core Sans Regular, and San Francisco Bold
   * You are free to modify the following section as you wish.
-  * Copyright of the said fonts goes to their respective owners, not PojavLauncherTeam, CasVeux, VeuxDesigns, or any other contributors, people, or organization willing to contribute to this file.
+  * Copyright of the said fonts goes to their respective owners, not PojavLauncherTeam, NeveuXon, VeuxDesigns, or any other contributors, people, or organization willing to contribute to this file.
 */
 @font-face {
    font-family: SanFrancisco-Bold;
@@ -107,6 +107,6 @@ code {
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #FFFFFF;
+  border: 0px solid #FFFFFF;
   border-top: none;
 }
