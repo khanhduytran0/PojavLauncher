@@ -1,0 +1,112 @@
+/**
+ * GloschUI is copyrighted by VeuxDesigns (2022). All Rights Reserved.
+ *
+ * Licensed under the GNU General Public License, Version 3.0;
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * https://www.gnu.org/licenses/gpl-3.0.en.html
+ *
+ * Check the source repository at 
+ * https://github.com/VeuxDesigns/GloschUI
+ *
+ * GloschUI is a Cascading Style Sheet (CSS) HTML interface styler made from Material Design, Bootstrap5, SemanticUI, and my brain.
+ *
+ * Use of the following CSS file is only effective on pages featuring a changelog, or webpages featuring loads of information needing to store an information in another container tab.
+ */
+
+/* Fonts 
+  * This file comes with a preconfigured @font-face with the following fonts: Gotham Bold, Core Sans Regular, and San Francisco Bold
+  * You are free to modify the following section as you wish.
+  * Copyright of the said fonts goes to their respective owners, not PojavLauncherTeam, CasVeux, VeuxDesigns, or any other contributors, people, or organization willing to contribute to this file.
+*/
+@font-face {
+   font-family: SanFrancisco-Bold;
+   src: url(/assets/glosch/fonts/SanFrancisco-Bold.OTF);
+}
+
+@font-face {
+   font-family: Gotham-Bold;
+   src: url(/assets/glosch/fonts/Gotham-Bold.ttf);
+}
+
+@font-face {
+   font-family: CoreSans-Regular;
+   src: url(/assets/glosch/fonts/CoreSans-Regular.otf)
+}
+/* Fonts: Stylize text in each heading, codeblocks, and "tip" tags */
+h1 {
+   font-family: Gotham-Bold;
+   color: white;
+}
+
+h2 {
+   font-family: SanFrancisco-Bold;
+   color: white;
+}
+
+h3 {
+   font-family: CoreSans-Regular;
+   color: white;
+}
+
+tip {
+   font-size: 10px;
+}
+
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  padding: 1px;
+  font-size: 105%;
+}
+
+/* Images: Add radius, but DO NOT radius image without the "Avatar" alt tag */
+.avatar {
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+#more {display: none;}
+
+
+
+/* Container Tabs */
+.tab {
+  overflow: hidden;
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #FFFFFF;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #FFFFFF;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #FFFFFF;
+  border-top: none;
+}
