@@ -1,49 +1,168 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<title>PojavLauncher - Launcher news, changelog</title>
-	<meta charset="utf-8" />
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=3.0" name="viewport" />
-	
-    <style type="text/css">
-	    body {
-		  margin: 0;
-		  padding: 0;
-		  background-color: #fdfdff;
-		  
-		  box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
-		  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		}
-	  
-		.changelog {
-		  padding: 10px;
-		  background-color: #f0f0f2;
-		  background-image: url('https://minecraft.net/content/dam/minecraft/backgrounds/bg-wool-dark.png');
-		  color: white;
-		}
-		
-		a:link, a:visited {
-		  color: #2198bf;
-		}
-	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {font-family: CoreSans-Regular;}
     </style>
+    <!-- GloschUI: load CSS file (1/2) -->
+    <link rel="stylesheet" href="./assets/glosch/glosch@0.1.0.css">
+    <!-- GloschUI: load GloschScript (2/2) -->
+    <script type="text/javascript" src="./assets/glosch/gloschAddon@0.1.js"></script>
   </head>
-  <body>
-<!--
-	<h3 style="padding-left: 20px;">PojavLauncher</h3>
--->
-	<div class="changelog">
-	  <h2>tmp-changelog, under construction. What is currently available on v2.1 for now:</h2>
-- Working Launcher without jailbreak, includes both Java 8 and 17 <br/>
-- Plug-and-play: automatic Java version and renderer selection <br/>
-- New UI, so we got a space for changelog here! <br/>
-- Copy/Open Link ingame <br/>
-- Complete custom controls support <br/>
-- Improved Keyboard and Mouse support <br/>
-- Complete Controller support <br/>
-	</div>
-	
-	<div id="frame" width="100%" height="100%" background="white"></div>
+  <body background="./assets/img/bg/pre_rev5.png" text="ffffff" link="B0CDFF">
+    <!-- Tabs: News, Changelog, and About.
+    !!!DO NOT TOUCH UNLESS PERMITTED BY REV5 AUTHOR (CasVeux)!!! -->
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'News')">📰 News</button>
+      <button class="tablinks" onclick="openCity(event, 'Changelog')">💾 Changelog</button>
+      <button class="tablinks" onclick="openCity(event, 'About')">👥 About</button>
+    </div>
+    <!-- 
+    * DIV: Content of each tab starts here.
+    * News: Recent news regarding development of PojavLauncher (iOS only)-->
+    <div id="News" class="tabcontent">
+     <h1><center>On The Spotlight</center></h1>
+     <h2>System Support in future releases</h2>
+     crystall1nedev: We've made some amazing advancements in the past few months with the launcher, however this announcement is for something else. I revisited an old conversation with Duy about iOS version support in PojavLauncher iOS. After digging into the facts, such as feature parity, the userbase, and the user experience, we have come to the following conclusion:<br>
+<br>
+In a future release, PojavLauncher will <b>require iOS 14.0 or later.</b><br>
+You can learn more about how this will happen over time with the GitHub issue linked <a href="https://github.com/PojavLauncherTeam/PojavLauncher_iOS/issues/384">here</a>
+      <h2>PojavLauncher iOS: Now Available for non-jailbroken devices!</h2>
+      <p>We've gotten pretty far with unjailbroken PojavLauncher in the past few days thanks to DuyKhanhTran's brilliance, and we are planning for 2.1 of the launcher to include an unjailbroken package! However, I just want to say a few things:<span id="dots"></span><span id="more">
+        <br>
+      <br>
+          <b>PojavLauncher 2.1 will be coming after Java 17 is brought to unjailbroken devices</b>. We want to include unjailbroken builds as soon as possible to reach even more users! ~~This also gives me a chance to flex 1.19.1 in my pocket on my YouTube channel :)
+      
+          **2.1 will also be the last version to include .deb packages**. Sideloading the ipa when jailbroken has all of the features you know--as well as a new directory system from the native Files app! Because of the feature parity when jailbroken, there's no need to include a special jailbroken package, and we will not be providing one with PojavLauncher 2.2 or later.
+          - On jailbroken devices, AppSync Unified can be used to install the .ipa without an Apple ID.
+          - If you want to use when unjailbroken as well, you can still sideload with AltStore or ReProvision.
+      
+          **My repository will no longer host PojavLauncher or OpenJDK**. My repository won't be hosting anything, actually, as I'm going to be completely shutting it down. After PojavLauncher 2.1 is released, I recommend getting used to the sideloading method via AppSync or AltStore. I'll be making an AltStore repository to make things easier for updating after my repo goes dark.<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+
+<button onclick="myFunction()" id="myBtn">Read more</button>
+      <h2>Raw Iron: PojavLauncher reaches v2.0!</h2>
+      <h1><center>PojavLauncher iOS — Changelog Page</center></h1>
+      <h2>Gear up, Quest down: Java Edition goes playable for QuestVR</h2>
+      <h2>A Walk Into The Blocky Carpet: Arcmetica crosses paths with PojavLauncher</h2>
+    </div>
+    <!-- 
+    * Changelog: what changed throughout the entire development of PojavLauncher -->
+    <div id="Changelog" class="tabcontent">
+     <h1><center>Changelog</center></h1>
+     <h2>Raw Iron 22w16a (v2.0.1)</h2>
+     <b>Fixes</b><br>
+     • Fixed an issue regarding to installation on Procursus<br>
+     <h2>Raw Iron (v2.0)</h2>
+     <b>Changes</b><br>
+     • Login view has been simplified to three easy buttons<br>
+     • Offline Account has been replaced with Local Account. <tip>(Installing Minecraft now requires a Mojang or Microsoft account logged in.)</tip><br>
+     • New FAQ page to show quick answers to questions<br>
+     • New About view to show quick details, links, and update history<br>
+     • Ability to send logs from within the launcher<br>
+     • the Select Account screen is now a pop-up window<br>
+     • New picker view to switch versions without typing them manually<br>
+     • Support to show your locally installed clients<br>
+     • New settings page to manage preferences<br>
+     • OpenJDK 8 support, to allow older versions of modded Minecraft<br>
+     • New mod installer, built into the launcher<br>
+     • Unfinished in-launcher custom controls (#292)<br>
+     • Move to /usr/share, for better rootFS compatibility<br>
+     <br>
+     <b>Fixes</b><br>
+     • WIP fix for typing on 1.12.2 and olde<br>
+     • The hotbar now works across GUI scales<br>
+     • (With JDK 8) Forge 1.8.9 - 1.15.2 now work<br>
+     • (With JDK 8) Vanilla 1.5.2 and under now work<br>
+     • Buttons now scale correctly according to screen size<br>
+     • Fix a crash if login to Microsoft fails.<br>
+     <br>
+     <b>Issues</b><br>
+     • Old custom control .json files no longer work, remove to fix<br>
+     • Custom controls settings page is not complete, there may be some issues!<br>
+     • An unknown issue might cause Taurine, 14.3, and A12+ to crash on launch.<br>
+     • Tell us.<br>
+     <br>
+     <b>A note for old iDevices</b><br>
+     If your device has only 1GB RAM (total), it might able to boot Minecraft to main screen, but might not able to join worlds or servers due to too little RAM. Higher RAM can be set (using the Java arguments preference and overb0ard), but you may need to close all apps and remove some tweaks in order to free up enough.<br>
+     <right><h2>* v1.2</h2>
+     <b>Changes</b><br>
+     • Use new method for Microsoft login<br>
+     • Added gl4es 1.1.5 as an option<br>
+     • WIP custom controls (can be changed by placing at <code>/var/mobile/Documents/.pojavlauncher/controlmap/default.json</code>. <tip>Note that some functions may not work properly.</tip><br>
+     • WIP external mouse support<br>
+     • Custom environment variables, in /var/mobile/Documents/.pojavlauncher/custom_env.txt<br>
+     • Reduction of file size with removal of unused binaries<br>
+     • Moved latestlog.txt and overrideargs.txt to /var/mobile/Documents/.pojavlauncher<br>
+     <br>
+     <b>Fixes</b><br>
+     • Fix file permission issues during install of package<br>
+     • Hide home bar like Bedrock Edition<br>
+     • Properly hide iPad status bar<br>
+     <br>
+     <b>Issues</b><br>
+     • Crash if login to Microsoft fails.<br>
+     • Control buttons notch offset seems doubled.<br>
+     • Several Forge versions won’t work due to removed deprecated classes (see #67 and #68).<br>
+     • Text input will not work on 1.12.2 and below.<br>
+     <br>
+     <b>A note for old iDevices</b><br>
+     Higher RAM can be set (using the overrideargs.txt file and jetsamctl), but we are unsure if iOS 12 will give enough free RAM.<br>
+     <br>
+     <h2>* v1.1</h2>
+     <b>Fixes</b><br>
+     • Fixed random crashes that occurs while Minecraft is initializing.<br>
+     <br>
+     <b>Changes</b><br>
+     • Added a place to customize JVM Flags, by create and edit minecraft/overrideargs.txt file.<br>
+     • Changed button offset for avoiding notch cutout on iPhone X and newer.<br>
+     • Forge 1.13+ (not all) and Fabric API are now supported.<br>
+     • launcher_profiles.json is now automatically created.<br>
+     • Minecraft 1.6.1 to 1.13.2 are now playable.<br>
+     • Mojang authentication was re-written, so it should work now.<br>
+     <br>
+     <b>Issues</b><br>
+     • Crash if login to Microsoft fails.<br>
+     • Several Forge versions won’t work due to removed deprecated classes (see #67 and #68).<br>
+     • Text input will not work on 1.12.2 and below.<br>
+     <h2>* v1.0</h2>
+     This is the first release of PojavLauncher iOS, the first ever Minecraft: Java Edition launcher for iOS. The Java Runtime can be found at Procursus repository or here.<br>
+     <br>
+     <b>Features</b><br>
+     • Login with Mojang (might not work), Microsoft (not tested) or offline.<br>
+Minecraft 1.14+ are playable.<br>
+Multiplayer and joining servers works.<br>
+Audio works (need enable ringer).<br>
+Fabric and OptiFine works.<br>
+Bedrock-like gestures: click to hotbar item; click to place block (trigger right mouse); hold and move to destroy blocks (trigger hold left mouse), but attacking entites is left mouse, so not same as Bedrock.<br>
+Hold screen on UI will hold the left mouse, so it can also used for moving the scroll bar.<br>
+On-screen control buttons.<br>
+<br>
+<b>Limitations</b><br>
+Jailbreak is required in order to install OpenJDK and PojavLauncher.<br>
+Forge won't work.<br>
+Fabric API won't work.<br>
+     <h1>Notice</h1>
+      Releases with an asterisk (*) beside implies that the packages for that specific release has been removed as compliance within Microsoft's copyright notice and takedown request.<br>
+    </div>
+    <!-- 
+    * About: About PojavLauncher, technical information, copyright section, and notice of concern. -->
+    <div id="About" class="tabcontent">
+      <center><img src="./assets/img/aboutsect.png" width="318" height="51"></center>
+      <h1><center>PojavLauncher: Changelog Page</center></h1>
+      <h2><center>Translations can be done at <a href="https://play.google.com/store/apps/details?id=net.kdt.poj">Crowdin</a></center></h2>
+      <center>Current Maintainer: NeveuXon</center>
+      <br>
+      <center><img src="./assets/img/pix/app.png" width="250" height="275"></center>
+  <center><h1>About PojavLauncher</h1></center>
+  <center>PojavLauncher is a free, open source, and stable Minecraft launcher for Android built from <a href="https://github.com/zhuowei/Boardwalk"> Boardwalk</a>, a project by Zhouwei Zhang</center>
+  <center><h2>Development Team</h2></center>
+  <center><h3>Head Developers</h3></center>
+  <center><img src="./assets/img/contrib/khanhduytran0.jpeg" alt="DuyKhanhTran" class="avatar" width="32" height="32"> DuyKhanhTran <img src="./assets/img/contrib/crystall1nedev.png" alt="EilionoirTunnic" class="avatar" width="32" height="32"> crystall1nedev</center>
+  <center><h3>Designer</h3></center>
+  <center><img src="./assets/img/contrib/Nev.jpeg" alt="NeveuXon" class="avatar" width="32" height="32"> NeveuXon</center>
+  <center><h3>Contributors</h3></center>
+  <center><img src="./assets/img/contrib/HongyiMC.png" alt="HongyiMC" class="avatar" width="32" height="32"> <img src="./assets/img/contrib/Diatrus.jpeg" alt="Diatrus" class="avatar" width="32" height="32"> <img src="./assets/img/contrib/ThatsNiceGuy.png" alt="TNG_YaeSakura" class="avatar" width="32" height="32"> <img src="./assets/img/contrib/itsnebulalol.png" alt="nebula" class="avatar" width="32" height="32"> <img src="./assets/img/contrib/beerpiss.jpeg" alt="bpiss" class="avatar" width="32" height="32"> <img src="./assets/img/contrib/asdfugil.png" alt="Nick Chan" class="avatar" width="32" height="32"> <img src="./assets/img/contrib/genericrandom64.png" alt="gran64" class="avatar" width="32" height="32"> <img src="./assets/img/contrib/thecoder08.jpeg" alt="tc08" class="avatar" width="32" height="32"> </center>
+    </div>
   </body>
 </html>
